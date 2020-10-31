@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import { CssBaseline, StylesProvider, ThemeProvider , jssPreset } from '@material-ui/core';
+
+import React from 'react';
 import './App.css';
+import LandingPage from './layout/LandingPage';
+import {theme} from './components/theme/Theme';
+
+//Jss for Rtl configuration
+import { create } from 'jss';
+import rtl from 'jss-rtl';
+
+// Configure JSS
+const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
+//----------------------------------------------------------------
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <ThemeProvider theme={theme}>
+      <StylesProvider jss={jss}>
+
+        <CssBaseline/>
+        <LandingPage/>
+
+      </StylesProvider>
+      </ThemeProvider>
+    </React.Fragment>
   );
 }
 
