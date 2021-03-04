@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.97626878.chunk.css",
+    "main.js": "/static/js/main.28007c55.chunk.js",
+    "main.js.map": "/static/js/main.28007c55.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0b5f71fc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0b5f71fc.js.map",
+    "static/css/2.30fbed10.chunk.css": "/static/css/2.30fbed10.chunk.css",
+    "static/js/2.602f1be1.chunk.js": "/static/js/2.602f1be1.chunk.js",
+    "static/js/2.602f1be1.chunk.js.map": "/static/js/2.602f1be1.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.30fbed10.chunk.css.map": "/static/css/2.30fbed10.chunk.css.map",
+    "static/css/main.97626878.chunk.css.map": "/static/css/main.97626878.chunk.css.map",
+    "static/js/2.602f1be1.chunk.js.LICENSE.txt": "/static/js/2.602f1be1.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/Vazir.f79ac166.woff",
+    "static/media/cardImg1.42e618ae.jpg": "/static/media/cardImg1.42e618ae.jpg",
+    "static/media/cardImg2.50d4b6d1.jpg": "/static/media/cardImg2.50d4b6d1.jpg",
+    "static/media/cardImg3.3abf1006.jpg": "/static/media/cardImg3.3abf1006.jpg",
+    "static/media/cardImg4.4f52c053.jpg": "/static/media/cardImg4.4f52c053.jpg",
+    "static/media/homeImg1.04b03e45.jpg": "/static/media/homeImg1.04b03e45.jpg",
+    "static/media/homeImg2.0e866994.jpg": "/static/media/homeImg2.0e866994.jpg",
+    "static/media/homeImg3.0d514b25.jpg": "/static/media/homeImg3.0d514b25.jpg",
+    "static/media/iran-decorator.9db28667.png": "/static/media/iran-decorator.9db28667.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0b5f71fc.js",
+    "static/css/2.30fbed10.chunk.css",
+    "static/js/2.602f1be1.chunk.js",
+    "static/css/main.97626878.chunk.css",
+    "static/js/main.28007c55.chunk.js"
+  ]
+}
