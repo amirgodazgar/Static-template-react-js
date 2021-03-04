@@ -1,5 +1,5 @@
 import React from 'react';
-import {TextField ,makeStyles , Button} from '@material-ui/core';
+import {TextField ,makeStyles , Button, Typography} from '@material-ui/core';
 
 const useStyles = makeStyles(theme =>({
 
@@ -23,6 +23,7 @@ const useStyles = makeStyles(theme =>({
          margin:'0'
       }
    },
+ 
    input : {
       color: theme.palette.grey[50],
    },
@@ -35,26 +36,68 @@ const useStyles = makeStyles(theme =>({
       margin: '2rem 0',
       color: theme.myPalette.fontDark,
       width: '20%'
-   }
-}))
+   },
+   
+   header : {
+      [theme.breakpoints.down('xs')]: {
+         fontSize:'1.8rem',
+      }
+   },
+
+   subTitle : {
+      [theme.breakpoints.down('xs')]: {
+         fontSize:'.7rem',
+      }
+   },
+
+}));
 
 
 const SuggestionsForm = () => {
    const classes = useStyles();
 
-   return (
+   return ( 
       <form className={classes.form} >
-         <div className={classes.inputBox}>
-          <TextField className={classes.input} color='secondary' InputLabelProps={{className: classes.inputLabel}} type='text' label="نام"  />
-          <TextField className={classes.input} color='secondary' InputLabelProps={{className: classes.inputLabel}} type='text' label="نام خانوادگی"  />
+        
+            <Typography className={classes.header} variant='h3' gutterBottom={true} data-aos="zoom-up" >پیشنهادات و انتقادات</Typography>
+            <Typography className={classes.subTitle} variant='subtitle2' gutterBottom={true} data-aos="zoom-out" >برای بهبود و ارتقای سطح کیفی خدمت رسانی ایران دکوراتور , نظرات و پیشنهادات خود را با ما درمیان بگذارید</Typography>
+
+         <div className={classes.inputBox} data-aos="flip-up">
+          <TextField 
+            color='secondary' 
+            InputProps={{className : classes.input}}
+            InputLabelProps={{className: classes.inputLabel}} 
+            type='text' label="نام"  
+            />
+
+          <TextField color='secondary'
+            InputProps={{className : classes.input}}
+            InputLabelProps={{className: classes.inputLabel}}
+            type='text' label="نام خانوادگی"
+            />
          </div>
 
-         <div className={classes.inputBox}>
-          <TextField className={classes.input} color='secondary' InputLabelProps={{className: classes.inputLabel}} type='email' label="ایمیل"  />
-          <TextField className={classes.input} color='secondary' InputLabelProps={{className: classes.inputLabel}} type='tel' label="شماره موبایل"  />
+         <div className={classes.inputBox} data-aos="flip-up">
+          <TextField 
+            color='secondary' 
+            InputProps={{className : classes.input}} 
+            InputLabelProps={{className: classes.inputLabel}} 
+            type='email' label="ایمیل"  />
+          <TextField color='secondary' 
+            InputProps={{className : classes.input}} 
+            InputLabelProps={{className: classes.inputLabel}} 
+            type='tel' label="شماره موبایل"  />
          </div>
-          <TextField className={classes.input} color='secondary' multiline InputLabelProps={{className: classes.inputLabel}} type='text' fullWidth={true}  label="متن پیام"  />
-          <Button className={classes.button} variant="contained">ارسال</Button>
+          <TextField 
+            color='secondary' 
+            multiline 
+            InputProps={{className : classes.input}} 
+            InputLabelProps={{className: classes.inputLabel}} 
+            type='text' fullWidth={true}  label="متن پیام" 
+            data-aos="flip-up"
+             />
+
+          <Button className={classes.button} variant="contained" data-aos="flip-down">ارسال</Button>
       </form>
    )
 }

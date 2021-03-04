@@ -1,6 +1,17 @@
 const { createMuiTheme } = require("@material-ui/core");
 
 export const theme = createMuiTheme({
+
+   breakpoints: {
+      values: {
+        xs: 0,
+        sm: 600,
+        md: 960,
+        lg: 1280,
+        xl: 1920,
+      },
+    },
+
    direction:'rtl',
 
    palette : {
@@ -19,6 +30,6 @@ export const theme = createMuiTheme({
    },
 
    typography:{
-      fontFamily:'Vazir',
+      fontFamily:'Vazir , Roboto'
    },
 })

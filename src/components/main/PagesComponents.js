@@ -1,18 +1,23 @@
-
-import {image1, image2, image3} from '../coverImage/Images'
+import {image1, image2, image3} from '../coverImage/Images';
+import Introduce from '../../layout/catalogPages/Introduce';
+import Exhibition from '../../layout/catalogPages/Exhibition';
+import Advantages from '../../layout/catalogPages/Advantages';
 
 export const pagesComponents = [
    {
       firstCol : image1 ,
-      secondCol : 'second',
+      secondCol : <Introduce/>,
+      id:'introduce'
    },
    {
       firstCol : image2  ,
-      secondCol :'second' ,
+      secondCol : <Exhibition/> ,
+      id:'exhibition'
    },
    {
       firstCol : image3  ,
-      secondCol :'second' ,
+      secondCol : <Advantages/> ,
+      id:'advantages'
    },
 ]
 

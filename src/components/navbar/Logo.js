@@ -17,8 +17,7 @@ const useStyles = makeStyles(theme => ({
    },
 
    logoIcon : {
-      height: '100%',
-      width: '100%',
+      width: '80%',
    }
 }))
 
@@ -29,6 +28,7 @@ const Logo = () => {
    return (
       <div className={classes.logoContainer}>
          <img className={classes.logoIcon} src={navbarLogo} alt="iran decorator logo"/>
+
       </div>
    )
 }
